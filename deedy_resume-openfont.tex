@@ -1,0 +1,250 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Manu Bhargav}{Srirangarajan}{
+\href{mailto:manubhargav27@gmail.com}{manubhargav27@gmail.com} | \href{tel:+919964210799}{+91 996 421 0799}\\
+\#2269\textbackslash1D, Vinobha Road, Jayalakshmipuram, Mysuru, KA 570012
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\subsection{Visvesvaraya} 
+\subsection{Technological} 
+\subsection{University }
+\descript{Bachelor of Engineering}
+\descript{Information Science}
+\location{July 2016  |  Mysuru, KA}
+Vidyavardhaka College of Engineering \\ 
+Consistently ranked in \textbf{Top 3\%} \\
+First Class with Distinction\\
+\sectionsep
+
+\subsection{Udacity}
+\descript{Front-End Web Developer Nanodegree}
+\location{Jan 2017 | AT\&T, Google, GitHub}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Portfolio:// \href{https://manubhargav.github.io}{\bf manubhargav.github.io} \\
+Github:// \href{https://github.com/manubhargav}{\bf github.com/manubhargav} \\
+LinkedIn://  \href{https://www.linkedin.com/in/manubhargav}{\bf Manubhargav}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills \& Interests}
+\sectionsep
+\location{Strong}
+\textbullet{} JavaScript \\
+\textbullet{}   TypeScript \\
+\textbullet{} Angular \\
+\textbullet{} NodeJS \\
+\textbullet{} RxJS \\ 
+\textbullet{} NPM \\
+\textbullet{} Git \\
+\textbullet{} Java \\
+\textbullet{} Spring Boot \\
+\sectionsep
+\location{Familiar}
+\textbullet{} C++ \\
+\textbullet{} Python \\
+\textbullet{} HTML5 \\
+\textbullet{} Heroku \\
+\textbullet{} AWS Lambda \\
+\textbullet{} AWS S3 \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+Compiler Design \\
+Operating Systems \\
+Software Engineering \\
+Unix and Shell Programming \\
+Advanced Computer Networks \\
+Information and Network Security \\
+Data Warehousing and Data mining  \\
+{\footnotesize \textit{\textbf{(Thesis and Research Paper) }}} \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Work Experience}
+\runsubsection{Infosys Limited}
+\descript{| Senior Software Engineer }
+\location{Jan 2018 – Present | Mysuru, KA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Modernized core online banking functionality for retail and business clients.
+\item Monolithic repository with Angular 9 Ivy libraries on the Front-end
+\item Developed API Micro-services using Spring Boot framework on the Back-end. 
+\item Implemented feature libraries and reviewed code written in TypeScript
+\end{tightemize}
+\sectionsep
+\runsubsection{Infosys Limited}
+\descript{| Software Engineer }
+\location{Feb 2017 – Jan 2018 | Mysuru, KA}
+\begin{tightemize}
+\item Vendor-based banking platform for Enterprise clients using agile (srum) based methodologies.
+\item Multi repository architecture with Angular2, .NET Core (MVC architecture) and Java code-base.
+\item Deployed on Cloud with AWS Lambda functions and S3 buckets using CI/CD on Microsft DevOps.
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Technical Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Technical Projects}
+\runsubsection{Namma Metro Map}\\
+\begin{tightemize}
+\item Progressive web app that shows Metro Rapid Transit in Bengaluru
+\item Taught myself JavaScript frameworks : jQuery, KnockoutJS
+\item Devised several APIs - MediaWiki, GoogleMaps, foursquare, Instagram, Facebook, Yelp using AJAX calls.  
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Galeria}\\
+\begin{tightemize}
+\item Full-stack Gallery app where users can showcase their art
+\item Built with Ruby - Sinatra, PostgreSQL and deployed on Heroku 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Frogger}
+\begin{tightemize}
+\item HTML5 Canvas powered video game, developed using OOP.
+\item Use the arrow keys to navigate towards the water. Avoid the bugs along the way!
+\item Follow this \textbf{ \href{https://manubhargav.github.io/frogger/}{link} } to play online and get the highest score possible!
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Whack-a-mole}
+\begin{tightemize}
+\item Whac-A-Mole, a popular arcade game built with Vanilla JavaScript
+\item Use the cursor to hit the heads of mechanical moles with a mallet as they pop up from holes quickly and repeatedly.
+\item Follow this \textbf{ \href{https://manubhargav.github.io/Whack-a-mole/}{link} } to play online and get the highest score possible!
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Leadership and Awards} 
+\begin{tabular}{rll}
+2014	     & Class Representative  & VVCE, Mysuru\\
+2015	     & Youth Intercollege Fest  & VTU Belagavi\\
+2016	     & Ranked 2\textsuperscript{nd}/60  & VTU Examinations\\
+
+
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications} 
+\renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+\bibliographystyle{abbrv}
+\bibliography{publications}
+\nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
